@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+
+
+    <section class="home">
+        <div class="elips-one elips"></div>
+        <div class="elips-two elips"></div>
+        <div class="elips-three elips"></div>
+
+        <div class="container">
+            <div class="home__top">
+                <img class="home__top-img" src="images/home/img.png" alt="">
+
+                <h1 class="home__top-title">
+                    День
+                    Космонавтики
+                </h1>
+                <p class="home__top-date">
+                    12 Апреля
+                    1962 года
+                </p>
+
+                <a class="home__top-link link" href="page-two.html">
+                    Начать
+                </a>
+            </div>
+
+            <div class="home__down">
+                <div class="home__contact">
+                    <h3 class="home__contact-name">
+                        Merzlyakov
+                        Ilya
+                    </h3>
+
+                    <div class="home__contact-years">
+                        20
+                        21
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").css("display", "none");
+
+            $("body").fadeIn(2000);
+
+            $("a.link").click(function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(1000, redirectPage);
+            });
+
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+</body>
+
+</html>

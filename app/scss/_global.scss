@@ -7,3 +7,164 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+.container{
+    max-width: 1170px;
+    margin: 0 30px;
+}
+
+.elips{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    
+
+}
+
+.elips-one{
+    width: 10px;
+    height: 10px;
+    left: 50px;
+       animation: shake  2s infinite;
+       @keyframes shake {
+        from {
+            
+            left: 90%; 
+            bottom: 100%;
+            opacity: 1;
+          
+          }
+          to { 
+            left: 0;
+            bottom: 0; 
+            opacity: 0;
+          }  
+          
+          0% {
+            box-shadow: 0 0px 10px 5px #fff;
+        }
+        70% {
+            box-shadow: 0 0px 10px 5px #fff;
+        }
+        100% {
+           box-shadow: 0 0px 10px 5px #fff;
+       }
+       }
+}
+.elips-two{
+    width: 10px;
+    height: 10px;
+    animation: eas  3s infinite;
+    
+
+       @keyframes eas {
+        from {
+            
+            left: 70%; 
+            bottom: 100%;
+            opacity: 1;
+            
+          
+          }
+          to { 
+            left: 0;
+            bottom: 0; 
+            opacity: 0;
+          }  
+          
+          0% {
+            box-shadow: 0 0px 10px 5px #fff;
+        }
+        70% {
+            box-shadow: 0 0px 10px 5px #fff;
+        }
+        100% {
+           box-shadow: 0 0px 10px 5px #fff;
+       }
+    }
+       
+}
+.elips-three{
+
+    width: 10px;
+    height: 10px;
+    animation: ad  4s infinite;
+    
+
+       @keyframes ad {
+        from {
+            
+            left: 40%; 
+            bottom: 100%;
+            opacity: 1;
+            
+          
+          }
+          to { 
+            left: 0;
+            bottom: 0; 
+            opacity: 0;
+          }  
+          
+          0% {
+            box-shadow: 0 0px 10px 5px #fff;
+        }
+        70% {
+            box-shadow: 0 0px 10px 5px #fff;
+        }
+        100% {
+           box-shadow: 0 0px 10px 5px #fff;
+       }
+    }
+}
+
+.link{
+    padding: 20px 50px;
+    border-radius: 30px;
+  background-color: #fff;
+    color: #1e1f24;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    transition: .5s;
+    &:hover{
+        box-shadow: 0 0px 10px 5px #fff;
+    }
+}
+
+

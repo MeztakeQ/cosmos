@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+
+
+    <section class="pagethree">
+        <div class="elips-one elips"></div>
+        <div class="elips-two elips"></div>
+        <div class="elips-three elips"></div>
+        <img class="pagethree__star" src="images/pagethree/star.png" alt="">
+        <div class="container">
+            <div class="pagethree__inner">
+                <h2 class="pagethree__inner-title">
+                    Юрий
+                    гагарин
+                </h2>
+
+                <div class="pagethree__inner-date">
+                    9 марта 1934 г -
+                    27 марта 1968 г
+                </div>
+
+                <div class="pagethree__wrap">
+                    <p class="pagethree__wrap-text pagethree__wrap-text--one">
+                        “Первый орбитальный полет вокруг Земли выполнил советский космонавт Юрий Гагарин на космическом
+                        корабле “Восток” — это историческое событие произошло 12 апреля 1961 года.”
+                    </p>
+
+                    <p class="pagethree__wrap-text pagethree__wrap-text--two">
+                        Земля впервые отправляла своего сына к звездам 57 лет назад — мир замер в ожидании перед стартом
+                        –
+                        Гагарин в напряженной тишине вдруг произносит простое, земное слово, которое стало знаменитым:
+                        “Поехали!”.
+                    </p>
+                </div>
+
+                <a class="pagethree__inner-link link" href="">
+                    Продолжить
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").css("display", "none");
+
+            $("body").fadeIn(2000);
+
+            $("a.link").click(function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(1000, redirectPage);
+            });
+
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

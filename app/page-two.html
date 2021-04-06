@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+
+
+    <section class="pagetwo">
+        <div class="elips-one elips"></div>
+        <div class="elips-two elips"></div>
+        <div class="elips-three elips"></div>
+        <img class="pagetwo-img" src="images/pagetwo/big.png" alt="">
+        <div class="container">
+            <div class="pagetwo__inner">
+                <h1 class="pagetwo__inner-title">
+                    День
+                    космонавтики
+                </h1>
+
+                <p class="pagetwo__inner-text pagetwo__inner-text--one">
+                    День космонавтики — день, установленный в память о совершении первого полёта человека в космос.
+                    поводом для учреждения праздника, посвященного космонавтике. Дата была утверждена Указом
+                </p>
+
+                <p class="pagetwo__inner-text pagetwo__inner-text--two">
+                    Первоначально День космонавтики отмечался в СССР. Сегодня он отмечается в России, а также ряде стран
+                    постсоветского пространства.
+                </p>
+
+                <a class="pagetwo__inner-link link" href="page-three.html">
+                    Продолжить
+                </a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").css("display", "none");
+
+            $("body").fadeIn(2000);
+
+            $("a.link").click(function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(1000, redirectPage);
+            });
+
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+</body>
+
+</html>
