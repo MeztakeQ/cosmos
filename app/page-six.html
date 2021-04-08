@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+
+
+    <section class="pagesix">
+        <div class="elips-one elips"></div>
+        <div class="elips-two elips"></div>
+        <div class="elips-three elips"></div>
+
+        <img class="pagesix__luna-one" src="images/pagesix/planet-1.png" alt="">
+        <img class="pagesix__luna-two" src="images/pagesix/planet-2.png" alt="">
+
+        <div class="container">
+
+            <div class="pagesix__inner">
+                <img class="pagesix__planet" src="images/pagesix/planet.png" alt="">
+                <div class="pagesix__box">
+                    <h2 class="pagesix__inner-title  wow animate__animated animate__bounceInDown">
+                        Алексей Архипович Леонов
+                    </h2>
+
+                    <div class="pagesix__inner-date wow animate__animated animate__bounceIn">
+                        30 мая 1934 г.-
+                        11 октября 2019 г
+
+                    </div>
+
+                    <div class="pagesix__wrap wow animate__animated animate__fadeIn">
+                        <p class="pagesix__wrap-text pagesix__wrap-text--one">
+                            Алексей Леонов совершил два космических полета, налетав в общей сложности 7 суток 33 минуты,
+                            и первый в мире выход в открытый космос (общее время - 23 минуты 41 секунда, из них 12 минут
+                            9 секунд - за пределами корабля).
+
+                        </p>
+
+                        <p class="pagesix__wrap-text pagesix__wrap-text--two">
+                            Первый полет состоялся 18-19 марта 1965 года, в котором он был вторым пилотом корабля
+                            "Восход-2" (командир - Павел Беляев). 18 марта вышел в открытый космос.
+                        </p>
+
+                        <p class="pagesix__wrap-text pagesix__wrap-text--three">
+                            В 1967-1970 годы Леонов возглавлял группу космонавтов, готовившихся к полету на Луну. После
+                            закрытия лунной программы проходил подготовку по программе ДОС ("Долговременная орбитальная
+                            станция"), но на первые станции "Салют" не летал.
+                        </p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").css("display", "none");
+
+            $("body").fadeIn(2000);
+
+            $("a.link").click(function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(1000, redirectPage);
+            });
+
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+
+</body>
+
+</html>

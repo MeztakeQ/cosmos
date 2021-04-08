@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+
+
+    <section class="pagefive">
+        <div class="elips-one elips"></div>
+        <div class="elips-two elips"></div>
+        <div class="elips-three elips"></div>
+
+        <div class="container">
+            <img class="pagefive__planet" src="images/pagefive/planet.png" alt="">
+            <div class="pagefive__inner">
+                <div class="pagefive__box">
+                    <h2 class="pagefive__inner-title  wow animate__animated animate__bounceInDown">
+                        Андриан Григорьевич Николаев
+                    </h2>
+
+                    <div class="pagefive__inner-date wow animate__animated animate__bounceIn">
+                        5 сентября 1929 г. -
+                        3 июля 2004 г.
+                    </div>
+
+                    <div class="pagefive__wrap wow animate__animated animate__fadeIn">
+                        <p class="pagefive__wrap-text pagefive__wrap-text--one">
+                            Андриян Григорьевич Николаев — советский космонавт №3. Дважды Герой Советского Союза.
+                            Генерал-майор авиации. По национальности — чуваш. Родился в чувашском селе Шоршелы. Совершил
+                            два
+                            космических полёта:
+
+                        </p>
+
+                        <p class="pagefive__wrap-text pagefive__wrap-text--two">
+                            с 11 по 15 августа 1962 года на корабле «Восток-3», совершив 64 витка вокруг Земли.
+                        </p>
+
+                        <p class="pagefive__wrap-text pagefive__wrap-text--three">
+                            с 1 по 19 июня 1970 года в качестве командира космического корабля «Союз-9». Корабль сделал
+                            286
+                            оборотов вокруг Земли за 424 ч 59 мин.
+                        </p>
+                    </div>
+
+                    <a class="pagefive__inner-link link" href="page-six.html">
+                        Продолжить
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/main.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").css("display", "none");
+
+            $("body").fadeIn(2000);
+
+            $("a.link").click(function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(1000, redirectPage);
+            });
+
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
